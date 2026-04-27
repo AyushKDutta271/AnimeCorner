@@ -54,7 +54,7 @@
 }
 
 .first-content{
-    background-image: url('D:/ItVedantProjects/Project1/Assets/Images/jkbg.jpg');
+    background-image: url('../Images/jkbg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
