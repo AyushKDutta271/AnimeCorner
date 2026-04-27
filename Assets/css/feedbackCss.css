@@ -1,0 +1,42 @@
+.input-div{
+    width: 100%;
+}
+
+.heading1{
+    width:28%;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+
+.heading2{
+    width:85%;
+    margin:10px auto 0px;
+     background-color: white;
+    color: black;
+}
+
+.heading1:hover{
+    background-color: black;
+    color: white;
+}
+
+.heading2:hover{
+     background-color: black;
+    color: white;
+}
+
+.buttonClass{
+    width:30%;
+    margin:0 auto;
+}
+
+.formCol{
+    background-color: magenta;
+    color: black;
+}
+
+hr{
+    color:black;
+    font-weight: bold;
+}

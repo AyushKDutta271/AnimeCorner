@@ -1,0 +1,9 @@
+.planDesc:hover{
+    width:35%;
+    box-shadow:3px 2px 3px 3px white;
+}
+
+.payDesc:hover{
+    width:30%;
+    box-shadow:3px 2px 3px 3px white;
+}

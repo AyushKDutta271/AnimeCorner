@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Assets/css/feedbackCss.css">
+</head>
+<body class="first-content">
+
+<!--Navigation bar start:-->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img class="logoImg" src="Assets/Images/logo.png" height="56px" width="auto" alt="">AnImE CoRnEr</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collections.html" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="subscription.html" class="nav-link">Subscriptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item" style="position: relative;">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres:</a>
+                        <ul class="dropdown-menu" aria-labelledby="#navbardropdown">
+                            <li><a class="dropdown-item" href="#">Action and Adventure</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sci-Fi and Fantasy</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Thriller/Horror</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Mystery</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Drama</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form action="" class="searchForm d-flex align-items-center me-3">
+                   <label for="searchLabel"> <h5 style="white-space: nowrap; font-family: fantasy; color: white;" class="my-2" for="searchLabel">Search Your Favourite Anime:</h5></label>
+                    <input type="search" class="form-control" placeholder="Anime name here..." aria-label="serach" id="searchLabel">
+                    <i class=" bi bi-search text-primary" type="button"></i>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 loginLink">
+                    <li class="nav-item login-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Navigation bar end!-->
+
+     <div style=" height:30px;position: sticky; left:0; top:450px; z-index:3; width:5%" >
+            <a href="#" type="button" style="text-decoration: none;"><h1>🔥</h1></a>
+        </div>
+
+   
+    <div class="container mt-2">         <!--Container start-->
+        <h3 class="heading1">Something is missing?!</h3>
+        <h4 class="heading2">Please suggest what other contents would you like to enjoy with the current ones...!</h4>
+        <div class="row mt-2">
+            <div class="col-md-4 mx-auto formCol" >
+                <form action="thankyou.html" method="post"  class="p-5">
+                    <div>
+                       <label for="name">Your Name:</label>
+                       <p><input type="text" id="name" name="nameVar" class="input-div" required></p>
+                    </div><hr>
+                    <div>
+                       <label for="country">From Where are you?!</label>
+                       <p><input type="text" id="place" name="countryVar" class="input-div" required></p>
+                    </div><hr>
+                    <div>
+                       <label for="emailid">Your Email Id:</label>
+                       <p><input type="email" id="emailid" name="emailVar" class="input-div" required></p>          
+                    </div><hr>
+                    <div>
+                       <p><label for="genres">Select Your Favourite Genres(or suggest us a new one)</label></p>
+                       <p>
+                        <input type="checkbox" id="genre" name="genre1" value="scifi">Sci-Fi
+                        <input type="checkbox" id="genre" name="genre2" value="thriller">Thriller
+                        <input type="checkbox" id="genre" name="genre3" value="action_adventure">Action/Adventure
+                        <input type="checkbox" id="genre" name="genre4" value="mystery">Mystery
+                       </p>
+                    </div><hr>
+                    <div>
+                        <label for="suggestion">Your Suggestions...?</label>
+                        
+                      <p><textarea name="suggestion" id="suggestion" rows="4" class="w-100"></textarea></p>
+                        
+                    </div><hr>
+                    <div class="buttonClass">
+                        <button type="submit" value="Submit" >Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="row mt-5 footer">
+                <div class="col-md-4 mt-5">
+                  <h5> <i class="bi bi-house-gear"></i> Address:</h5>
+                  <p>4D,13,The Jackson Street,</p><hr/>
+                  <p>towards Lost in Paradise, xu landmark,</p><hr/>
+                  <p>Rose-Valley, Shibuya,Japan</p>
+                </div>
+           
+
+             <div class="col-md-4 mt-5">
+                <h5><i class="bi bi-link"></i> Quick Links:</h5>
+
+              <p><a href="www.instagram.com" class="anchor" target="_blank"><i class="bi bi-instagram text-danger"></i></a></p><hr/>
+               <p><a href="www.Facebook.com" class="anchor" target="_blank"><i class="bi bi-facebook text-primary"></i></a></p><hr/>
+               <p><a href="https://www.crunchyroll.com/" class="anchor" target="_blank"><i class="bi bi-ethernet"></i></a></p><hr/>
+               <p>For Feedback: <a href="feedback.html" class="anchor" target="_blank"><i class="bi bi-share-fill"></i></a></p>
+            
+            </div>
+                
+             <div class="col-md-4 mt-5">
+                <h5><i class="bi bi-person-rolodex"></i> Contact:</h5>
+                <p><i class="bi bi-telephone-fill"></i>:1234567</p><hr/>
+                <p><i class="bi bi-envelope-at"></i>:animecorner732@gmail.com</p>
+            </div><hr/>
+            <p class="trademark">&copy;AnImE CoRnEr, llc</p>
+        </div>
+          
+        <button class="signinButton">Not a part yet?! <p><a href="register.html" class="anchor">Enter</a></p></button>
+
+        
+    </div>                          <!--Container End-->
+    
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

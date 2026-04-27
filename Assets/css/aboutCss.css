@@ -1,0 +1,52 @@
+video{
+    position: fixed;
+    z-index:-1;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.aboutDiv{
+    z-index:2;
+}
+
+.content-Div1{
+ width: 30%;   
+ margin: 0 auto;
+}
+
+.content-Div2{
+ width: 30%;   
+ margin: 0 auto;
+}
+
+.content-Div3{
+ width: 20%;   
+ margin: 0 auto;
+}
+.heading1{
+    width:20%;
+    margin:0 auto;
+}
+
+.heading2{
+    width:16%;
+    margin:10px auto 0px;
+
+}
+
+.heading1,.heading2,h3,h4{
+    background-color: white;
+    color:black;
+    text-align: center;
+}
+
+.heading1:hover{
+    background-color: black;
+    color:white;
+}
+.heading2:hover{
+     background-color: black;
+    color:white; 
+}

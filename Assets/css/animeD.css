@@ -1,0 +1,58 @@
+.animeClass{
+    background-color: black;
+    color:white;
+}
+
+.box1{
+    float: left;
+}
+
+.box2{
+   align-items: flex-start;
+   color:white;
+   display: flex;
+   flex-direction: column;
+
+   justify-content: space-around;
+   height: 150px;
+}
+.videoP{
+    clear: both;
+    color:white;
+    
+}
+
+.spans-div{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.spans-div>span{
+    border: 3px  solid orange;
+    border-radius: 40px;
+    padding:3px;
+    margin-right:10%;
+}
+hr{
+    color: white;
+}
+
+.watch-button{
+    width:100%;
+    border-radius: 40px;
+    margin-left: 2%;
+    padding:10px;
+    box-sizing: border-box;
+    color:gold;
+}
+
+.page-header{
+    display: inline-block;
+}
+.page-header:hover{
+background-color: wheat;
+color: black;
+
+}
+

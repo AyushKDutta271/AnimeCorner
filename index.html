@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This web page is about displaying Animated content like series, books, merchandises, etc">
+    <meta name="keywords" content="anime, series, japanese, drama, sci-fi, horror, gothic, animation, entertainment">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="first-content">
+
+<!--Navigation bar start:-->
+    <nav class="navbar navbar-expand-lg navbar-light" >
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img class="logoImg" src="Assets/Images/logo.png" height="56px" width="auto" alt="">
+                AnImE CoRnEr
+            </a>
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collections.html" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="subscription.html" class="nav-link">Subscriptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item" style="position: relative;">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres:</a>
+                        <ul class="dropdown-menu" aria-labelledby="#navbardropdown">
+                            <li><a class="dropdown-item" href="#">Action and Adventure</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sci-Fi and Fantasy</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Thriller/Horror</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Mystery</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Drama</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form action="" class="searchForm d-flex align-items-center me-3">
+                   <label for="searchLabel"> <h5 style="white-space: nowrap; font-family: fantasy; color: white;" class="my-2" for="searchLabel">Search Your Favourite Anime:</h5></label>
+                    <input type="search" class="form-control" placeholder="Anime name here..." aria-label="serach" id="searchLabel">
+                    <i class=" bi bi-search text-primary" type="button"></i>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 loginLink">
+                    <li class="nav-item login-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Navigation bar end!-->
+    <div style=" height:30px;position: sticky; left:0; top:450px; z-index:3; width:5%" >
+            <a href="#" type="button" style="text-decoration: none;"><h1>🔥</h1></a>
+        </div>
+    
+
+    <div class="container">         <!--Container start-->
+     
+        <div class="row">           <!--Image Slider (row-Start)-->        
+            <div class="col">
+                <h3 class="slide-header1">Top Anime Picks For You!</h3>
+                <div id="carouselAnime" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                     <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselAnime" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselAnime" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselAnime" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselAnime" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselAnime" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                     </div>
+                    <div class="carousel-inner">
+                         <div class="carousel-item active c-item " data-bs-interval="10000" >
+                            <img src="Assets/Images/goh.png" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                
+                                 <p><a href="animeDetails.html" class="anchor detailsAnchor">View Details</a></P>
+                                 <a class="btn slide-cart" href="subscription.html">Wanna try?!</a>
+                            </div>
+                         </div>
+                        <div class="carousel-item c-item" data-bs-interval="10000" >
+                            <img src="Assets/Images/sl.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-md-block">
+                               
+                                <p><a href="animeDetails.html" class="anchor detailsAnchor">View Details</a></p>
+                                <a class="btn slide-cart" href="subscription.html">Wanna try?!</a>
+                            </div>
+                         </div>
+                        <div class="carousel-item c-item" data-bs-interval="10000" >
+                            <img src="Assets/Images/dslogo.webp" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                
+                                 <P><a href="animeDetails.html" class="anchor detailsAnchor">View Details</a></P>
+                                 <a class="btn slide-cart" href="subscription.html">Wanna try?!</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item c-item" data-bs-interval="10000" >
+                            <img src="Assets/Images/ga.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                
+                                 <P><a href="animeDetails.html" class="anchor detailsAnchor">View Details</a></P>
+                                 <button class="btn slide-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item c-item" data-bs-interval="10000" >
+                            <img src="Assets/Images/jjklogo.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                
+                                <P><a href="animeDetails.html" class="anchor detailsAnchor">View Details</a></P>
+                                <a class="btn slide-cart" href="subscription.html">Wanna try?!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAnime" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAnime" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>    <!--Image Slider (row-end)-->
+
+
+        <div class="row mt-5">  <!--2nd Row Start-->
+            <div class="col-md-3 review-cards">      <!--Card-Sliding Column Start-->
+              <!-- <h3 class="slide-header2">Reviews by anime fans!</h3> -->
+                <div id="AnimeReview" class="carousel slide">
+                     <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#AnimeReview" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#AnimeReview" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#AnimeReview" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#AnimeReview" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#AnimeReview" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                     </div>
+                    <div class="carousel-inner">
+                         <div class="carousel-item active r-item">
+                            <img src="Assets/Images/review1.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption d-md-block">
+                                <div class="review-summary">
+                                      
+                                      <p>&#11088;&#11088;&#11088;&#10032;&#10032;
+                                        Ambitious Story!</p>
+                                        <b>For Demon Slayer;</b>
+                                </div>
+                                  
+                                <p><i>It had the potential to be one of the best villain stories,
+                                 - Chuzi Diaz</i>
+                                </p>
+                            </div>
+                         </div>
+                        <div class="carousel-item r-item" >
+                            <img src="Assets/Images/review2.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption  d-md-block">
+                                <div class="review-summary">
+                                      
+                                      <p>&#11088;&#11088;&#11088;&#11088;&#10032;
+                                        Worth watching!</p>
+                                        <b>For ChainsawMan-Reze Arc;</b>
+                                </div>
+                                <p><i>This arc is 100% popcorn entertainment, and for once it's a good thing. 
+                                    -drx89
+                                </i>
+                                </p>
+                            </div>
+                         </div>
+                        <div class="carousel-item r-item">
+                            <img src="Assets/Images/review3.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption  d-md-block">
+                                 <div class="review-summary">
+                                      
+                                      <p>&#11088;&#11088;&#11088;&#11088;&#10032;
+                                        Definitely should watch once!</p>
+                                        <b>For Solo Leveling;</b>
+                                </div>
+                                <p><i>The art, choreography, animation and sound design are all truly amazing.
+                                    -Caccacca
+                                </i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item r-item">
+                            <img src="Assets/Images/review4.png" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption  d-md-block">
+                                 <div class="review-summary">
+                                      
+                                      <p>&#11088;&#11088;&#11088;&#11088;&#10032;
+                                        Recommended!</p>
+                                        <b>For Jujutsu Kaisen-Culling Game;</b>
+                                </div>
+                                <p><i>This season’s animation, art style, and OSTs are on another level. 
+                                    -MyPirate31
+                                </i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item r-item">
+                            <img src="Assets/Images/jjklogo.jpg" class="d-block w-100 c-img" alt="...">
+                            <div class="carousel-caption  d-md-block">
+                                <div class="review-summary">
+                                      
+                                      <p>&#11088;&#11088;&#11088;&#11088;&#10032;
+                                        Nice Plot and Storyline!</p>
+                                        <b>For Death Note;</b>
+                                </div>
+                                <p><i>I really enjoyed this season 
+                                    -Ampacti
+                                </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#AnimeReview" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#AnimeReview" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>          <!--Card-Sliding Column End-->
+
+            <div class="col-md-9 collections-container" style=" background-color: #26004d;"> <!--Cards aligning(col-start)-->
+                 <h3 class="cards-header">Browse your Favourite Mangas</h3>
+              <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-5" style="width: 100%;">
+                         <img src="Assets/Images/DBZ.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dragon Ball Z Vol.9 by<em>-Akira Toriyama</em></h5>
+                            <p class="card-text">
+                                <b>Genre:</b>Action and adventure, Sci-Fi
+                            </p>
+                            <a href="collections.html" class="btn btn-primary anchor">See Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="card mb-5" style="width: 100%;">
+                         <img src="Assets/Images/solo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Solo Leveling Vol.5 by<em>-Akira Toriyama</em></h5>
+                            <p class="card-text">
+                                <b>Genre:</b>Action and Adventure, Drama
+                            </p>
+                            <a href="collections.html" class="btn btn-primary anchor">See Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="card mb-5" style="width: 100%;">
+                         <img src="Assets/Images/jjkManga.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jujutsu Kaisen Vol.1 by - <i>Gege Akutami</i></h5>
+                            <p class="card-text">
+                                <b>Genre:</b>Action and adventure , Sci-Fi, Drama
+                            </p>
+                            <a href="collections.html" class="btn btn-primary anchor">See Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                     <div class="card mb-5" style="width: 100%;">
+                         <img src="Assets/Images/dnManga.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Death Note Vol. 13 by- <i>Tsugumi Ohba</i></h5>
+                            <p class="card-text">
+                                <b>Genre:</b>Sci-Fi, Drama, Mystery, Thriller
+                            </p>
+                            <a href="collections.html" class="btn btn-primary anchor">See Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                     <div class="card mb-5" style="width: 100%;">
+                         <img src="Assets/Images/blueLockManga.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue Lock Vol. 5 by-<i>Muneyuki Kaneshiro</i></h5>
+                            <p class="card-text">
+                                <b>Genre:</b>Action and Adventure, Drama
+                            </p>
+                            <a href="collections.html" class="btn btn-primary anchor">See Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                     <div class="card mb-5" style="width: 100%;">
+                         <img src="Assets/Images/KaijuManga.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaiju No. 8 by- <i>M&C Grandmedia</i></h5>
+                            <p class="card-text">
+                                <b>Genre:</b>Action and adventure , Sci-Fi, Drama
+                            </p>
+                            <a href="collections.html" class="btn btn-primary anchor">See Details</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>              <!--Cards aligning(col-end)-->
+        </div>                  <!--2nd row end-->
+       
+<h3 class="cards-header  mt-5" align="center">Buy Our Subscriptions!</h3>
+        <div class="row plan-div" style="background-color: black;"> <!--third row start(Plans=section)-->
+            <div class="col-md-6 d-flex justify-content-end mt-5">
+                 <div class=" mb-5" style="width: 70%;">
+                        
+                         <button class=" subs-trial-button">Start Your 7 Days Free Trial</button>
+                        <div class="card-subs-body  p-3">
+                            <h5 class="card-subs-title">Mini Plan</h5><hr/>
+                            <p class="card-subs-text">
+                                <b>Contents:</b><i> 2 Your Favourite Books + 2 Anime Series</i>
+                            </p><hr/>
+                            <p>
+                               &#10004; No Adds
+                            </p><hr/>
+                            <p>
+                               &#10004; Offline Viewing
+                            </p><hr/>
+                             <p>
+                               &#10004;  Complete access to Crunchyroll's library
+                            </p><hr/>
+                            <p>
+                               &#10004;  New episodes shortly after airing in Japan
+                            </p><hr/>
+                            <p>
+                                <b>Our Recommendation:</b> For decent entertainment experience lasting for a month!
+                            </p><hr/>
+                            <p>
+                                <b>Price:</b>Rs. 2999/- Only
+                            </p><hr/>
+                            <a href="subscription.html" class="btn btn-primary subs-button anchor ">Get it!</a>
+                        </div>
+                 </div>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-start mt-5" ">
+                 <div class="mb-5" style="width: 70%;">
+                         
+                         <button class="subs-trial-button">Start Your 7 Days Free Trial</button>
+                        <div class="card-subs-body p-3">
+                            <h5 class="card-subs-title">6 months Plan</h5><hr/>
+                            <p class="card-subs-text">
+                                <b>Contents:</b><i> 4 Your Favourite Books + 6 Anime Series</i>
+                            </p><hr/>
+                             <p>
+                               &#10004; No Adds
+                            </p><hr/>
+                            <p>
+                               &#10004; Offline Viewing
+                            </p><hr/>
+                            <p>
+                               &#10004;  Complete access to Crunchyroll's library
+                            </p><hr/>
+                            <p>
+                               &#10004;  New episodes shortly after airing in Japan
+                            </p><hr/>
+                            <p>
+                                &#10004; Access to Crunchy Roll's Game Vault
+                            </p><hr/>
+                            <p>
+                                <b>Our Recommendation:</b> For decent entertainment experience lasting for 6 months!
+                            </p><hr/>
+                            <p class="mb-3">
+                                <b>Price:</b>Rs. 7999/- Only
+                            </p><hr/>
+                            <a href="subscription.html" class="btn btn-primary subs-button anchor mt-0 mb-2 mx-auto">Get it!</a>
+                        </div>
+                 </div>
+            </div>
+        </div>                              <!--third row end(Plans-section)-->
+
+
+        <div class="row mt-5 footer">
+                <div class="col-md-4 mt-5">
+                  <h5> <i class="bi bi-house-gear"></i> Address:</h5>
+                  <p>4D,13,The Jackson Street,</p><hr/>
+                  <p>towards Lost in Paradise, xu landmark,</p><hr/>
+                  <p>Rose-Valley, Shibuya,Japan</p>
+                </div>
+           
+
+             <div class="col-md-4 mt-5">
+                <h5><i class="bi bi-link"></i> Quick Links:</h5>
+
+              <p><a href="www.instagram.com" class="anchor" target="_blank"><i class="bi bi-instagram text-danger"></i></a></p><hr/>
+               <p><a href="www.Facebook.com" class="anchor" target="_blank"><i class="bi bi-facebook text-primary"></i></a></p><hr/>
+               <p><a href="https://www.crunchyroll.com/" class="anchor" target="_blank"><i class="bi bi-ethernet"></i></a></p><hr/>
+               <p>For Feedback: <a href="feedback.html" class="anchor" target="_blank"><i class="bi bi-share-fill"></i></a></p>
+            
+            </div>
+                
+             <div class="col-md-4 mt-5">
+                <h5><i class="bi bi-person-rolodex"></i> Contact:</h5>
+                <p><i class="bi bi-telephone-fill"></i>:1234567</p><hr/>
+                <p><i class="bi bi-envelope-at"></i>:animecorner732@gmail.com</p>
+            </div><hr/>
+            <p class="trademark">&copy;AnImE CoRnEr, llc</p>
+        </div>
+          
+        <button class="signinButton">Not a part yet?! <p><a href="register.html" class="anchor">Enter</a></p></button>
+
+        
+    </div>                          <!--Container End-->
+    
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

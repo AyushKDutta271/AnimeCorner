@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections Page</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Assets/css/collectionsCss.css">
+</head>
+<body class="first-content">
+
+<!--Navigation bar start:-->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#"><img class="logoImg" src="Assets/Images/logo.png" height="56px" width="auto" alt="">AnImE CoRnEr</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collections.html" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="subscription.html" class="nav-link">Subscriptions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item" style="position: relative;">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres:</a>
+                        <ul class="dropdown-menu" aria-labelledby="#navbardropdown">
+                            <li><a class="dropdown-item" href="#">Action and Adventure</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sci-Fi and Fantasy</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Thriller/Horror</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Mystery</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Drama</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form action="" class="searchForm d-flex align-items-center me-3">
+                   <label for="searchLabel"> <h5 style="white-space: nowrap; font-family: fantasy; color: white;" class="my-2" for="searchLabel">Search Your Favourite Anime:</h5></label>
+                    <input type="search" class="form-control" placeholder="Anime name here..." aria-label="serach" id="searchLabel">
+                    <i class=" bi bi-search text-primary" type="button"></i>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 loginLink">
+                    <li class="nav-item login-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Navigation bar end!-->
+
+     <div style=" height:30px;position: sticky; left:0; top:450px; z-index:3; width:5%" >
+            <a href="#" type="button" style="text-decoration: none;"><h1>🔥</h1></a>
+        </div>
+
+   
+    <div class="container mt-5" >         <!--Container start-->
+     <h3 class="Mangas-Heading">Recent Mangas and Manhwa's Collection:</h3>
+       <div class="row d-flex align-items-stretch">                <!--Row having filter section + collections-->
+        
+        <div class="col-md-4 filterCol text-light" style=" height: 900px; border:2px solid white">      <!--filter section start-->
+            <form action="" style="height: 100%; width:100%">
+                <h5 class="filter">Filter by Anime Categories:</h5>
+                <div>
+                    <p class="mb-5"><a href="#">Action</a></p>
+                    <p class="mb-5"><a href="#">Sci-Fi</a></p>
+                    <p class="mb-5"><a href="#">Thriller/Horror</a></p>
+                    <p class="mb-5"><a href="#">Lo-Fi Vibing<sup>Special</sup></a></p>
+                </div>
+
+                <h5 class="filter">Filter by Ratings:</h5>
+                <div>
+                    <label for="hv" >Enter High Range:</label>
+                    <p><input type="number" name="highValue" id="hv" placeholder="Enter rating out of 5" style="width:100%" class="mb-5"></p> 
+                
+
+                    <label for="lv">Enter Low Range:</label>
+                    <p><input type="number" name="lowValue" id="lv" placeholder="Enter rating out of 5" style="width:100%" class="mb-5"></p>
+                </div>
+
+                 <h5 class="filter">Sort by Collections:</h5>
+                 <div class="mb-5">
+                   <label for="manga" >Books</label>
+                   <input type="radio" name="manga" value="books">
+                 </div>
+                 <div class="mb-5">
+                   <label for="shows">Tv-Shows</label>
+                   <input type="radio" name="manga" value="tv">
+                </div>
+                
+                <div>
+                 <p style="width: 10%; margin:0 auto"><a href="#" class="btn btn-success filter " >Filter</a></p> 
+                </div>
+                           
+            </form>
+        </div>                      <!--filter section end-->
+        
+        <div class="col-md-8 collectionsCol">      <!--Collections start-->
+          <div class="row manga1Row bg-dark">  <!--Manga1-->
+              <div class="col-md-6 mangaImage-Col mt-5">
+                <img src="Assets/Images/DBZ.jpg" class="mangaimage" alt="">
+                <a href="Assets/pdfs/dbxMangaPdf.pdf" download>Download Sample</a><hr>
+              </div>
+              <div class="col-md-6 mangaDesc-col">
+                <table>
+                    <tr align="center">
+                        
+                        <th width="25%">Book Name</th>
+                        <th width="15%">Rating</th>
+                        <th>Reviews</th>
+                        
+                    </tr>
+                    <tr align="center">
+                        <td>Dragon Ball z Vol.3</td>
+                        <td class="sec-td">★★★★★</td>
+                        <td>
+                            
+              
+                                <div id="AnimeReview" class="carousel slide">
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                     <div class="carousel-item r-item">
+                                         <img src="Assets/Images/8650615-anime-characters-crossover-collage.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Nice Plot!</p>
+                                                <b>For JJK;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Nice Story line!</p>
+                                                <b>For Solo Leveling;</b>
+                                            </div>
+                                  
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/8650615-anime-characters-crossover-collage.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Epic Drama!</p>
+                                                <b>For One Peice;</b>
+                                            </div>
+                                  
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/100_anime_vectors_t_shirt_designs_bundle__4_by_thegraphex_dfnof53-pre.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Appealing visuals!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                  </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#AnimeReview" data-bs-slide="prev">
+                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                     <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#AnimeReview" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                               </button>
+                           
+                        </td>
+                    </tr>
+                    
+                    <tr align="center">
+                        <td colspan="2">
+                           <h5> Price </h5>
+                        </td>
+                        <td>
+                           <a class="buy-class btn btn-success" href="subscription.html">Buy in Rs. 899/-</a>
+                        </td>
+                    </tr>
+                </table>
+             </div>
+           
+       </div>
+        <div class="row manga1Row bg-dark">  <!--Manga2-->
+            <div class="col-md-6 mangaImage-Col mt-5">
+                <img src="Assets/Images/blueLockManga.jpg" class="mangaimage" alt="">
+                <a href="Assets/pdfs/blueLockmangaPdf.pdf" download>Download Sample</a><hr>
+            </div>
+            <div class="col-md-6 mangaDesc-col">
+                <table >
+                    <tr align="center">
+                        
+                        <th width="25%">Book Name</th>
+                        <th width="15%">Rating</th>
+                        <th>Reviews</th>
+                        
+                    </tr>
+                    <tr align="center" >
+                        <td>Solo Leveling Vo.5</td>
+                        <td>★★★★☆</td>
+                        <td>
+                            
+              
+                                <div id="AnimeReview1" class="carousel slide">
+                                
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active r-item">
+                                         <img src="Assets/Images/kame-house-dragon-3840x2160-25003.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div >
+                                      
+                                                <p>
+                                                 Nice Anime!</p>
+                                                <b>For JJK;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                     <div class="carousel-item r-item">
+                                         <img src="Assets/Images/megumi-fushiguro-1920x1080-13535.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div >
+                                      
+                                                <p>
+                                                 Totally mindblowing!</p>
+                                                <b>For Suzume;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/kame-house-dragon-3840x2160-25003.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div >
+                                      
+                                                <p>
+                                                 Epic Story!</p>
+                                                <b>For Hitori No Shita;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/megumi-fushiguro-1920x1080-13535.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Amazing Character!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/kame-house-dragon-3840x2160-25003.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                  </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#AnimeReview1" data-bs-slide="prev">
+                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                     <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#AnimeReview1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                               </button>
+                           
+                        </td>
+                    </tr>
+                    
+                    <tr align="center">
+                        <td colspan="2">
+                           <h5> Price </h5>
+                        </td>
+                        <td>
+                           <a class="buy-class btn btn-success" href="subscription.html">Buy in Rs. 899/-</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+         <div class="row manga1Row bg-dark">  <!--Manga3-->
+            <div class="col-md-6 mangaImage-Col mt-5">
+                <img src="Assets/Images/dnManga.jpg" class="mangaimage"  alt="">
+                <a href="Assets/pdfs/Death Note Volume 1 - PDF Room_text.pdf" download>Download Sample</a><hr>
+            </div>
+            <div class="col-md-6 mangaDesc-col">
+                <table >
+                    <tr align="center">
+                        
+                        <th width="25%">Book Name</th>
+                        <th width="15%">Rating</th>
+                        <th>Reviews</th>
+                        
+                    </tr>
+                    <tr align="center" >
+                        <td>Jujutsu Kaisen Vol.1</td>
+                        <td>★★★★☆</td>
+                        <td>
+                            
+              
+                                <div id="AnimeReview2" class="carousel slide">
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active r-item">
+                                         <img src="Assets/Images/100_anime_vectors_t_shirt_designs_bundle__4_by_thegraphex_dfnof53-pre.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                     <div class="carousel-item r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/100_anime_vectors_t_shirt_designs_bundle__4_by_thegraphex_dfnof53-pre.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                  </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#AnimeReview2" data-bs-slide="prev">
+                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                     <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#AnimeReview2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                               </button>
+                           
+                        </td>
+                    </tr>
+                    
+                    <tr align="center">
+                        <td colspan="2">
+                           <h5> Price </h5>
+                        </td>
+                        <td>
+                           <a class="buy-class btn btn-success" href="subscription.html">Buy in Rs. 599/-</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row manga1Row bg-dark">  <!--Manga4-->
+            <div class="col-md-6 mangaImage-Col mt-5">
+                <img src="Assets/Images/KaijuManga.jpg" class="mangaimage" alt="">
+                <a href="Assets/pdfs/Ch 000 Prologue.pdf" download>Download Sample</a><hr>
+            </div>
+            <div class="col-md-6 mangaDesc-col">
+                <table >
+                    <tr align="center">
+                        
+                        <th width="25%">Book Name</th>
+                        <th width="15%">Rating</th>
+                        <th>Reviews</th>
+                        
+                    </tr>
+                    <tr align="center" >
+                        <td>Death Note Vol. 13</td>
+                        <td>★★★★☆</td>
+                        <td>
+                            
+              
+                                <div id="AnimeReview3" class="carousel slide">
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active r-item">
+                                         <img src="Assets/Images/goku-black-and-3840x2160-20871.png" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                     <div class="carousel-item r-item">
+                                         <img src="Assets/Images/8650615-anime-characters-crossover-collage.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div >
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/goku-black-and-3840x2160-20871.png" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div >
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div >
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/goku-black-and-3840x2160-20871.png" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                  </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#AnimeReview3" data-bs-slide="prev">
+                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                     <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#AnimeReview3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                               </button>
+                           
+                        </td>
+                    </tr>
+                    
+                    <tr align="center">
+                        <td colspan="2">
+                           <h5> Price </h5>
+                        </td>
+                        <td>
+                           <a class="buy-class btn btn-success" href="subscription.html">Buy in Rs. 499/-</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row manga1Row bg-dark">  <!--Manga5-->
+            <div class="col-md-6 mangaImage-Col mt-5">
+                <img src="Assets/Images/solo.jpg" class="mangaimage" alt="">
+                <a href="Assets/pdfs/Ch 000 Prologue.pdf" download>Download Sample</a><hr>
+            </div>
+            <div class="col-md-6 mangaDesc-col">
+                <table >
+                    <tr align="center">
+                        
+                        <th width="25%">Book Name</th>
+                        <th width="15%">Rating</th>
+                        <th>Reviews</th>
+                        
+                    </tr>
+                    <tr align="center" >
+                        <td>Blue Lock Vol. 5</td>
+                        <td>★★★★☆</td>
+                        <td>
+                            
+              
+                                <div id="AnimeReview4" class="carousel slide">
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active r-item">
+                                         <img src="Assets/Images/goku-black-and-3840x2160-20871.png" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                     <div class="carousel-item r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/8650615-anime-characters-crossover-collage.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/4k-aesthetic-anime-shooting-stars-in-sky-zbhxo2gzkjhska8h.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/goku-black-and-3840x2160-20871.png" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                  </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#AnimeReview4" data-bs-slide="prev">
+                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                     <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#AnimeReview4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                               </button>
+                           
+                        </td>
+                    </tr>
+                    
+                    <tr align="center">
+                        <td colspan="2">
+                           <h5> Price </h5>
+                        </td>
+                        <td>
+                           <a class="buy-class btn btn-success" href="subscription.html">Buy in Rs. 799/-</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row manga1Row bg-dark">  <!--Manga6-->
+            <div class="col-md-6 mangaImage-Col mt-5">
+                <img src="Assets/Images/jjkManga.jpg" class="mangaimage" alt="">
+                <a href="Assets/pdfs/_OceanofPDF.com_jujutsu_kaisen_volume_16_-_Gege_Akutami.pdf" download>Download Sample</a><hr>
+            </div>
+            <div class="col-md-6 mangaDesc-col">
+                <table >
+                    <tr align="center">
+                        
+                        <th width="25%">Book Name</th>
+                        <th width="15%">Rating</th>
+                        <th>Reviews</th>
+                        
+                    </tr>
+                    <tr align="center" >
+                        <td>Kaiju No. 8</td>
+                        <td>★★★★☆</td>
+                        <td>
+                            
+              
+                                <div id="AnimeReview5" class="carousel slide">
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active r-item">
+                                         <img src="Assets/Images/review1.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                          
+                                         </div>
+                                    </div>
+                                     <div class="carousel-item r-item">
+                                         <img src="Assets/Images/review1.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/review1.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            <p><i>It had the potential to be one of the best villain stories,
+                                                - Chuzi Diaz</i>
+                                            </p>
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/review1.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                            
+                                         </div>
+                                    </div>
+                                    <div class="carousel-item r-item">
+                                         <img src="Assets/Images/review1.jpg" class="d-block w-100 e-img" alt="...">
+                                         <div class="carousel-caption d-md-block">
+                                            <div>
+                                      
+                                                <p>
+                                                 Ambitious Story!</p>
+                                                <b>For Demon Slayer;</b>
+                                            </div>
+                                  
+                                           
+                                         </div>
+                                    </div>
+                                  </div>
+                               <button class="carousel-control-prev" type="button" data-bs-target="#AnimeReview5" data-bs-slide="prev">
+                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                     <span class="visually-hidden">Previous</span>
+                               </button>
+                               <button class="carousel-control-next" type="button" data-bs-target="#AnimeReview5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                               </button>
+                           
+                        </td>
+                    </tr>
+                    
+                    <tr align="center">
+                        <td colspan="2">
+                           <h5> Price </h5>
+                        </td>
+                        <td>
+                           <a class="buy-class btn btn-success">Buy in Rs. 899/-</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+       </div><!--collections end-->
+      </div><!--row of filter and collections end-->
+        
+
+
+        <div class="row mt-5 footer">
+                <div class="col-md-4 mt-5">
+                  <h5> <i class="bi bi-house-gear"></i> Address:</h5>
+                  <p>4D,13,The Jackson Street,</p><hr/>
+                  <p>towards Lost in Paradise, xu landmark,</p><hr/>
+                  <p>Rose-Valley, Shibuya,Japan</p>
+                </div>
+           
+
+             <div class="col-md-4 mt-5">
+                <h5><i class="bi bi-link"></i> Quick Links:</h5>
+
+              <p><a href="www.instagram.com" class="anchor" target="_blank"><i class="bi bi-instagram text-danger"></i></a></p><hr/>
+               <p><a href="www.Facebook.com" class="anchor" target="_blank"><i class="bi bi-facebook text-primary"></i></a></p><hr/>
+               <p><a href="https://www.crunchyroll.com/" class="anchor" target="_blank"><i class="bi bi-ethernet"></i></a></p><hr/>
+               <p>For Feedback: <a href="feedback.html" class="anchor" target="_blank"><i class="bi bi-share-fill"></i></a></p>
+            
+            </div>
+                
+             <div class="col-md-4 mt-5">
+                <h5><i class="bi bi-person-rolodex"></i> Contact:</h5>
+                <p><i class="bi bi-telephone-fill"></i>:1234567</p><hr/>
+                <p><i class="bi bi-envelope-at"></i>:animecorner732@gmail.com</p>
+            </div><hr/>
+            <p class="trademark">&copy;AnImE CoRnEr, llc</p>
+        </div>
+          
+        <button class="signinButton">Not a part yet?! <p><a href="register.html" class="anchor">Enter</a></p></button>
+
+        
+    </div>                          <!--Container End-->
+    
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

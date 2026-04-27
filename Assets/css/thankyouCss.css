@@ -1,0 +1,28 @@
+.thankyou{
+    box-shadow: 2px 5px 5px 3px white;
+    background-color:honeydew;
+    color:black;
+    
+}
+
+.thankyou:hover{
+     box-shadow: 2px 3px 3px 2px black;
+    background-color: black;
+    color:white;
+}
+
+.row{
+    height:450px;
+     display: flex;
+    align-items: center;
+}
+.bg{
+    background-image: url('D:/ItVedantProjects/Project1/Assets/Images/jkbg.jpg');
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height:100%;
+    object-fit: cover;
+
+
+}
